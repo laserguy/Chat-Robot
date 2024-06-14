@@ -1,0 +1,291 @@
+{
+  "move": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB/NOUN",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    },
+    "between prep used": {
+      "requirements": {
+        "dep": "prep",
+        "pos": "ADP",
+        "text": "between"
+      },
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB/NOUN",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "pobj",
+          "pos": "NOUN/PROPN",
+          "children": [
+            {
+              "dep": "cc",
+              "pos": "CCONJ"
+            },
+            {
+              "dep": "conj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    },
+    "from prep used": {
+      "requirements": {
+        "dep": "prep",
+        "pos": "ADP",
+        "text": "from"
+      },
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB/NOUN",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pour": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    },
+    "pour with fill word": {
+      "requirements": {
+        "dep": "ROOT",
+        "pos": "VERB",
+        "text": "fill"
+      },
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "ROOT",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "shake": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    },
+    "shake many times": {
+      "requirements": {
+        "dep": "npadvmod",
+        "pos": "NOUN/PROPN"
+      },
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "npadvmod",
+          "pos": "NOUN/PROPN",
+          "children": [
+            {
+              "dep": "nummod",
+              "pos": "NUM"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "open": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "close": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "clean": {
+    "basic": {
+      "requirements": {},
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    },
+    "clean with accessory object": {
+      "requirements": {
+        "dep": "prep",
+        "pos": "ADP"
+      },
+      "chain": [
+        {
+          "dep": "ROOT",
+          "pos": "VERB",
+          "children": [
+            {
+              "dep": "dobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        },
+        {
+          "dep": "prep",
+          "pos": "ADP",
+          "children": [
+            {
+              "dep": "pobj",
+              "pos": "NOUN/PROPN"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

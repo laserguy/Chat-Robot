@@ -1,0 +1,1 @@
+File taken from: https://github.com/chatscope/use-chat-example/blob/main/src/assets/akane.svg

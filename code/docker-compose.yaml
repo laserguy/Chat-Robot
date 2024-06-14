@@ -1,0 +1,18 @@
+version: "3"
+services:
+  frontend:
+    image: verbbot-frontend
+    ports:
+      - "3308:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+  backend:
+    image: verbbot-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/__pycache__
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
